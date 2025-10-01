@@ -172,8 +172,8 @@ body::-webkit-scrollbar {
     font-family: "Playfar Display";
     padding-left: 400px;
     font-weight: 700;
-    font-size: 50px;
-    padding-top: 60px;
+    top: 50px;
+    font-size: clamp(24px, 5vw, 50px);
     position: absolute;
 
 }
@@ -293,6 +293,7 @@ body::-webkit-scrollbar {
 }
 
 .txt1{
+    font-size: clamp(16px, 3vw, 50px);
     font-weight: 700;
     top: 230px;
     left: 200px;
@@ -604,7 +605,7 @@ body::-webkit-scrollbar {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .maindiv>h1{
         font-size: 60px;
     }
@@ -627,17 +628,22 @@ body::-webkit-scrollbar {
     
     .header2>h1{
         padding-left: 15%;
-        padding-top: 20%;
+        padding-top: 10%;
+
     }
+
+    .header2>img{
+        display: none;
+    }
+
     .txt1{
         top: 20%;
         left: 5%;
         position: absolute;
     }
     .slider{
+        align-items: center;
         top: 25%;
-        left: 3%;
-        width: 95%;
         height: 50%;
     }
     .prev{
