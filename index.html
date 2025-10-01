@@ -37,47 +37,41 @@
 </section>
 
 <!-- PICK YOUR TRIP -->
-<section class="relative min-h-screen w-full flex flex-col">
-  <div class="text-white px-5 md:px-40 pt-20">
+<section class="relative min-h-screen w-full flex flex-col items-center px-5 md:px-20 pt-20">
+  <!-- Заголовок -->
+  <div class="text-center text-white max-w-3xl">
     <h1 class="font-serif text-4xl md:text-6xl font-bold">Pick your trip</h1>
-    <p class="mt-4 text-base md:text-lg max-w-2xl">
+    <p class="mt-4 text-base md:text-lg">
       Мы собрали для вас лучшие маршруты по Чарынскому каньону ночью.<br>
       Окунитесь в магию лунного света, насладитесь тишиной и откройте новые горизонты.
     </p>
   </div>
 
-  <div class="relative flex items-center mt-20 px-5">
-<div class="relative flex items-center mt-20 px-5">
-  <div class="overflow-hidden rounded-lg w-[clamp(200px,40vw,386px)] h-[clamp(260px,50vw,507px)]">
-    <div class="slides flex transition-transform duration-500">
-      <img src="pictures/3.jpg" class="object-cover w-full h-full">
-      <img src="pictures/2.jpeg" class="object-cover w-full h-full">
-      <img src="pictures/1.jpg" class="object-cover w-full h-full">
+  <!-- Слайдер и описание -->
+  <div class="mt-16 w-full flex flex-col md:flex-row items-center gap-10">
+    <!-- Слайдер -->
+    <div class="relative w-full md:w-[clamp(200px,40vw,386px)] h-[clamp(260px,50vw,507px)] overflow-hidden rounded-lg">
+      <div class="slides flex transition-transform duration-500">
+        <img src="pictures/3.jpg" class="object-cover w-full h-full">
+        <img src="pictures/2.jpeg" class="object-cover w-full h-full">
+        <img src="pictures/1.jpg" class="object-cover w-full h-full">
+      </div>
+      <button class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 py-1 rounded">🢐</button>
+      <button class="next absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 py-1 rounded">🢒</button>
     </div>
-  </div>
 
-  <button class="prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white px-4 py-1 rounded">🢐</button>
-  <button class="next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white px-4 py-1 rounded">🢒</button>
-</div>
-
-  <!-- TEXT -->
-<div class="mt-10 px-5 md:px-40 flex flex-col items-start gap-6">
-  <!-- Заголовок -->
-  <h1 class="text-2xl md:text-4xl font-bold">Ночной Чарынский каньон</h1>
-  
-  <!-- Параграф -->
-  <p class="text-sm md:text-base font-semibold max-w-xl">
-    Звёзды над каньоном Вдали от городских огней открывается
-    безграничное звёздное небо. Тысячи ярких звёзд словно парят над каньоном,
-    отражаясь в его тишине. Это идеальное место для созерцания, душевных разговоров
-    у костра и полного перезагрузки от суеты повседневной жизни.
-  </p>
-  
-  <!-- Кнопка -->
-  <a href="https://www.instagram.com/reel/C89SX0hCIep/" target="_blank">
-    <img src="assets/CTA.svg" class="w-64 cursor-pointer">
-  </a>
-</div>
+    <!-- Текст -->
+    <div class="flex flex-col gap-6 text-white max-w-lg">
+      <h1 class="text-2xl md:text-4xl font-bold">Ночной Чарынский каньон</h1>
+      <p class="text-sm md:text-base font-semibold">
+        Звёзды над каньоном. Вдали от городских огней открывается безграничное звёздное небо.
+        Тысячи ярких звёзд словно парят над каньоном, отражаясь в его тишине.
+        Это идеальное место для созерцания, душевных разговоров у костра и полного перезагрузки от суеты повседневной жизни.
+      </p>
+      <a href="https://www.instagram.com/reel/C89SX0hCIep/" target="_blank">
+        <img src="assets/CTA.svg" class="w-64 cursor-pointer">
+      </a>
+    </div>
   </div>
 </section>
 
